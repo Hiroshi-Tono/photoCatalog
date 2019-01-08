@@ -16,6 +16,7 @@ class MasterViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.leftBarButtonItem = editButtonItem
 
@@ -25,6 +26,7 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        */
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -32,12 +34,14 @@ class MasterViewController: UITableViewController {
         super.viewWillAppear(animated)
     }
 
+    /*
     @objc
     func insertNewObject(_ sender: Any) {
         objects.insert(NSDate(), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
     }
+    */
 
     // MARK: - Segues
 
@@ -71,6 +75,7 @@ class MasterViewController: UITableViewController {
         return cell
     }
 
+    /*
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
@@ -84,7 +89,7 @@ class MasterViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
-
+    */
 
 }
 
