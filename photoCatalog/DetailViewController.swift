@@ -17,8 +17,8 @@ class DetailViewController: UIViewController {
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
+            if let imageView = self.photoImageView {
+                imageView.image = UIImage(named: detail)
             }
         }
     }
@@ -27,6 +27,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         configureView()
+        self.title = "Borderless一覧"
     }
 
     var detailItem: String? {
