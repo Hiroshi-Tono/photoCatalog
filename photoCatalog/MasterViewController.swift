@@ -11,11 +11,12 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
-    var objects = ["まぐろ","サーモン","えび","はまち","いか","うなぎ"]
+    var objects = ["Borderless001","Borderless002","Borderless003","Borderless004","Borderless005","Borderless006","Borderless007"]
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Borderless一覧"
         /*
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.leftBarButtonItem = editButtonItem
