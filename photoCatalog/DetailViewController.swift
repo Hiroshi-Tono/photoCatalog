@@ -9,8 +9,9 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var photoImageView: UIImageView!
+    
+    
 
 
     func configureView() {
